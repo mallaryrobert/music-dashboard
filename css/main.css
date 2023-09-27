@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+
+    padding:2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 1rem;
+  
+  }
+
+   @media screen and (min-width: 40rem){
+  
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      height: 100vh;
+      grid-gap: 1rem;
+    }
+    
+
+    }
+
+  h1 {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+  
+section {
+    background-color: #BE8171;
+    border-radius: 1rem; 
+    margin-bottom: 1rem; 
+  }
+
+  @media screen and (min-width: 40rem){
+  
+    .section {
+      margin-bottom: 0;
+      }
+   
+
+    } 
+
+  /*MUSIC PLAYER */
+
+.music-player {
+    background:#fff;
+    align-items: center;
+    border-style: solid;
+    border-color: #BE8171;
+    box-shadow: 0 0 2rem rgba(0,0,0,.3);
+    color:#BE8171;
+    padding: 1rem;
+
+  }
+
+   @media screen and (min-width: 40rem){
+  
+    .music-player {
+      grid-column: 1 / span 4;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      padding-top: 1rem;    }
+
+
+   
+
+    } 
+
+.music-player img {
+  max-width: 100%;
+
+}
+.song {
+  display: grid;
+  grid-template-columns: 5rem 2fr;
+  padding-left: 2rem;
+
+}
+
+ .music-player p {
+    line-height: .25rem;
+  }
+
+
+.music-player .controls {
+  padding: 2rem;
+  max-width: 100%;
+  word-spacing: 3rem;
+  text-align: center;
+
+}
+
+
+
+.volume {
+justify-self: end;
+text-align: center;
+}
+
+.volume img {
+  width: 100%;
+}
+  /*NAVIGATION*/
+
+  .nav {
+    
+    text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      font-size: 1rem;
+      align-items: center;
+      padding: 1rem;
+    
+  }
+
+  @media screen and (min-width: 40rem){ 
+    
+    .nav {
+      grid-column: 1;
+    grid-row: 2 / span 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  
+      
+    }
+
+    ul {
+
+      margin-top: 1rem;
+
+    }
+
+
+  }
+
+  .nav .section-header {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: .75rem;
+  }
+
+  ul {
+    list-style: none;
+
+
+  }
+  li {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .nav li {
+    margin-bottom: 2rem;
+  }
+
+  .nav li a {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 1fr;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+  }
+  .nav li a:hover {
+   color:#4D6771; 
+  }
+
+  .section-header p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+   .socialmedia {
+  font-weight: 200;
+    }
+
+
+
+
+  
+  /*TOP PICKS*/
+  
+  
+  .top-picks-section {
+    grid-column: 2 / span 3;
+    padding: 1rem;
+    
+}
+
+.top-picks {
+  
+  margin: 1rem;
+
+}
+
+@media screen and (min-width: 40rem){
+  
+  .top-picks {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-content: center;
+
+    }
+  } 
+
+
+
+  .top-pick  {
+    display: grid;
+    grid-template-columns: 5rem 2fr;
+    padding-left: 2rem; 
+    object-fit: cover;
+
+  }
+
+   
+  
+  .top-picks h1 {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .top-picks p {
+    line-height: .5rem;
+    margin-left: 1rem;
+
+  }
+
+  .top-picks .album {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+  }
+
+  .top-picks .artist {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+  }
+
+  /* .top-picks .song {
+    align-items: center;
+  } */
+
+
+
+    /*MINUTES*/
+
+  .minutes {
+        grid-column: 2;
+        background-color: white;
+        color:#BE8171;
+        border-style: solid;
+        border-color: #BE8171;
+        box-shadow: 0 0 2rem rgba(0,0,0,.3);
+        padding: 2rem;
+        
+  }
+
+  @media screen and (max-width: 40rem){ 
+    
+    .minutes .number {
+      font-size: 1rem;
+      color: #4D6771;
+      font-weight: 800;
+      padding: 0;
+      margin-top: 3rem;
+      line-height: 2.5rem;
+
+    
+    }
+    .minutes .dates {
+      font-weight: 200;
+      line-height: 1rem;
+      word-spacing: 1rem;
+  
+    }
+
+
+  }
+
+  .minutes .button {
+    text-decoration: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .minutes h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .minutes h2 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+   .minutes p {
+    line-height: .15rem;
+  } 
+  
+  .minutes .number {
+    font-size: 3rem;
+    color: #4D6771;
+    font-weight: 800;
+    padding: 0;
+    margin-top: 3rem;
+  
+  }
+
+  .minutes .dates {
+    font-weight: 200;
+    line-height: .5rem;
+    word-spacing: 1rem;
+
+  }
+
+  
+  
+      /*TOP-GENRES*/
+
+  .top-genres {
+        grid-column: 2;
+        background-color: white;
+        box-shadow: 0 0 2rem rgba(0,0,0,.3);  
+        padding: 1.5rem;  
+  }
+ 
+  .top-genres img {
+    max-width: 100%;
+  }
+
+
+        /*TOP-ARTISTS*/
+
+        
+
+        .top-artists h1 {
+          
+          padding-bottom: 0;
+          padding-left: 4rem;
+          font-size: 2rem;
+          padding-top: 2rem;
+
+        }
+
+        .artists {
+          
+          padding-left: 2rem; 
+          margin: 2rem;   
+          text-align: left;
+          padding-bottom: 2rem;
+          }
+
+         @media screen and (min-width: 40rem){
+  
+          .artists {
+          display: grid;
+          grid-template-columns: 1fr 10rem;
+          grid-gap: 2rem;
+          padding-left: 2rem;
+          padding-bottom: 1rem; 
+          margin: 2rem;   
+          text-align: left;
+          }
+         
+          h1 {
+            font-size: 2rem;
+          }
+          } 
+        
+        .artists .image img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+          line-height: 1rem;
+        }
+        .top-artists {
+          grid-column: 3 / span 2;
+          grid-row: 3 /span 2;
+      }
+      .top-artists .text {
+      line-height: 1rem;
+      }
+
+  
+  
