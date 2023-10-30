@@ -48,12 +48,12 @@ section {
 
 .music-player {
     background:#fff;
-    align-items: center;
+    text-align: center;
     border-style: solid;
     border-color: #BE8171;
     box-shadow: 0 0 2rem rgba(0,0,0,.3);
     color:#BE8171;
-    padding: 1rem;
+    padding: .5rem;
 
   }
 
@@ -64,6 +64,7 @@ section {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
       padding: 0;  
+      text-align: center;
      }
 
 
@@ -78,40 +79,52 @@ section {
 .song {
   display: grid;
   grid-template-columns: 5rem 2fr;
-  padding-left: 2rem;
+  padding: 1rem;
 
 }
 
- .music-player p {
-    
-  }
+ 
 
 
-.music-player .controls {
-  max-width: 100%;
+.controls i {
   word-spacing: 3rem;
-  text-align: center;
+  align-content: center;
   margin: 1rem 0 1rem 0;
+  font-size: 2rem;
+  color: #4d6771;
+  padding: .5rem;
+
 
 }
 
 @media screen and (min-width: 80rem){ 
 
-  .music-player .controls {
-  padding: 2rem;
-  max-width: 100%;
-  word-spacing: 3rem;
-  text-align: center;
+  .controls i {
+    word-spacing: 3rem;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+    color: #4d6771;
+    padding: 0.75rem;
 
   }
+  .volume {
+    justify-self: end;
+    margin-top: 2rem;
+    }
+    
+    .volume img {
+      width: 100%;
+    }
 }
 
 
-
+.song-playing {
+  text-align: start;
+}
 
 .volume {
 justify-self: end;
-text-align: center;
 }
 
 .volume img {
