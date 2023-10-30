@@ -12,7 +12,7 @@
   
   }
 
-   @media screen and (min-width: 40rem){
+   @media screen and (min-width: 80rem){
   
     body {
       display: grid;
@@ -27,16 +27,15 @@
 
   h1 {
     font-size: 2rem;
-    padding-left: 3rem;
   }
   
 section {
     background-color: #BE8171;
     border-radius: 1rem; 
-    margin-bottom: 1rem; 
+    padding: 2rem;
   }
 
-  @media screen and (min-width: 40rem){
+  @media screen and (min-width: 60rem){
   
     .section {
       margin-bottom: 0;
@@ -58,13 +57,14 @@ section {
 
   }
 
-   @media screen and (min-width: 40rem){
+   @media screen and (min-width: 80rem){
   
     .music-player {
       grid-column: 1 / span 4;
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
-      padding-top: 1rem;    }
+      padding: 0;  
+     }
 
 
    
@@ -83,17 +83,29 @@ section {
 }
 
  .music-player p {
-    line-height: 1rem;
+    
   }
 
 
 .music-player .controls {
+  max-width: 100%;
+  word-spacing: 3rem;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+
+}
+
+@media screen and (min-width: 80rem){ 
+
+  .music-player .controls {
   padding: 2rem;
   max-width: 100%;
   word-spacing: 3rem;
   text-align: center;
 
+  }
 }
+
 
 
 
@@ -114,11 +126,10 @@ text-align: center;
       color: white;
       font-size: 1rem;
       align-items: center;
-      padding: 1rem;
     
   }
 
-  @media screen and (min-width: 40rem){ 
+  @media screen and (min-width: 80rem){ 
     
     .nav {
       grid-column: 1;
@@ -132,7 +143,9 @@ text-align: center;
 
     ul {
 
-      margin-top: 1rem;
+      padding: 0;
+      margin: 0;
+      
 
     }
 
@@ -141,8 +154,11 @@ text-align: center;
 
   .nav .section-header {
     text-align: center;
-    padding-top: 2rem;
     font-size: .75rem;
+  }
+
+  .profile {
+    margin-bottom: 1rem;
   }
 
   ul {
@@ -155,6 +171,7 @@ text-align: center;
     font-size: 1rem;
     color: white;
     font-size: 1.5rem;
+    margin: 0;
   }
   
   .nav li {
@@ -191,17 +208,17 @@ text-align: center;
   
   .top-picks-section {
     grid-column: 2 / span 3;
-    padding: 1rem;
     
 }
 
 .top-picks {
   
-  margin: 1rem;
+  margin: 0;
 
 }
 
-@media screen and (min-width: 40rem){
+
+@media screen and (min-width: 80rem){
   
   .top-picks {
     
@@ -211,6 +228,16 @@ text-align: center;
     align-content: center;
 
     }
+    .top-pick  {
+      display: grid;
+      grid-template-columns: 5rem 2fr;
+      grid-gap: 1rem;
+      object-fit: cover;
+  
+    }
+    .top-picks h1 {
+      margin: 0;
+    }
   } 
 
 
@@ -219,16 +246,17 @@ text-align: center;
     display: grid;
     grid-template-columns: 5rem 2fr;
     grid-gap: 1rem;
-    padding: 2rem;
     object-fit: cover;
+    margin: 1rem;
 
   }
 
    
   
   .top-picks h1 {
-    margin-bottom: 0;
-    padding-top: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+
   }
   .top-picks p {
     line-height: 1rem;
@@ -261,11 +289,10 @@ text-align: center;
         border-style: solid;
         border-color: #BE8171;
         box-shadow: 0 0 2rem rgba(0,0,0,.3);
-        padding: 2rem;
         
   }
 
-  @media screen and (max-width: 40rem){ 
+  @media screen and (max-width: 80rem){ 
     
     .minutes .number {
       font-size: 1rem;
@@ -349,34 +376,29 @@ text-align: center;
         .top-artists h1 {
           
           padding-bottom: 0;
-          padding-left: 2rem;
           font-size: 2rem;
-          padding-top: 2rem;
           margin: 0;
 
         }
 
         .artists {
           
-          padding-left: 2rem; 
           text-align: left;
-          padding-bottom: 2rem;
           }
 
-         @media screen and (min-width: 40rem){
+         @media screen and (min-width: 80rem){
   
           .artists {
           display: grid;
-          grid-template-columns: 1fr 10rem;
-          grid-gap: 2rem;
-          padding-left: 2rem;
-          padding-bottom: 1rem; 
-          margin: 2rem;   
+          grid-template-columns: 1fr 1fr;
+          padding: 2rem 0 0 0;
+          margin: 0;   
           text-align: left;
           }
          
           h1 {
             font-size: 2rem;
+            margin: 0;
           }
           } 
         
