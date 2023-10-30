@@ -93,11 +93,15 @@ section {
   word-spacing: 3rem;
   align-content: center;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #4d6771;
   padding: 1rem;
 
 
+}
+
+.controls i:hover{
+  color: #BE8171;
 }
 
 @media screen and (min-width: 90rem){ 
@@ -106,7 +110,7 @@ section {
     word-spacing: 3rem;
     text-align: center;
     margin: 1rem 0 1rem 0;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #4d6771;
     padding: 0.75rem;
 
@@ -116,9 +120,42 @@ section {
     margin-top: 1rem;
     }
     
-    .volume img {
-      width: 100%;
+    .volume i  {
+      justify-self: end;
+      margin: 0;
+      padding: 1rem 2rem 0 0;
+      font-size: 1.5rem;
+      align-self: center;
+      }
+
+    .song-playing {
+      text-align: start;
+      line-height: 1rem;
+      align-self: center;
     }
+}
+
+@media screen and (min-width: 40rem){ 
+
+  .controls i {
+    word-spacing: 3rem;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 1.75rem;
+    color: #4d6771;
+    padding: 0.75rem;
+
+  }
+  .volume {
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .volume i {
+      }
 
     .song-playing {
       text-align: start;
@@ -137,11 +174,12 @@ section {
   font-weight: 600;
 }
 
-.volume {
-justify-self: end;
-margin-bottom: 1rem;
-align-self: center;
-}
+.volume i {
+  justify-self: end;
+  margin: 0;
+  padding: 0 2rem 0 0;
+  font-size: 2rem;
+  align-self: center;  }
 
 .volume img {
   width: 100%;
@@ -450,6 +488,36 @@ align-self: center;
       .top-artists .text {
       line-height: 1rem;
       }
+
+      @media screen and (min-width: 40rem){
+  
+        .artists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 0 0 0;
+        margin: 0;   
+        text-align: left;
+        }
+       
+        h1 {
+          font-size: 2rem;
+          margin: 0;
+        }
+        } 
+      
+      .artists .image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        line-height: 1rem;
+      }
+      .top-artists {
+        grid-column: 3 / span 2;
+        grid-row: 3 /span 2;
+    }
+    .top-artists .text {
+    line-height: 1rem;
+    }
 
   
   
